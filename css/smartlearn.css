@@ -1,0 +1,102 @@
+body {
+  font-family: 'Cairo', 'Tajawal', Arial, sans-serif;
+  background: #f9f9f9;
+  color: #222;
+  padding-top: 70px; /* to avoid navbar overlap */
+}
+
+.navbar {
+  background: #fff;
+  transition: background 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.navbar.scrolled {
+  background-color: #007bff !important;
+}
+.navbar.scrolled .nav-link,
+.navbar.scrolled .navbar-brand {
+  color: #fff !important;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #007bff;
+}
+
+.nav-link {
+  font-weight: 500;
+  color: #222 !important;
+  margin-left: 1rem;
+}
+.nav-link.active, .nav-link:hover {
+  color: #007bff !important;
+}
+
+.btn-primary {
+  border-radius: 30px;
+  font-weight: 500;
+  padding: 0.5rem 1.5rem;
+}
+
+.hero-section {
+  background: linear-gradient(90deg,#007bff 0%,#00c6ff 100%);
+  color: #fff;
+  padding: 60px 0;
+  text-align: center;
+  border-radius: 0 0 32px 32px;
+}
+
+.hero-section h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.hero-section p {
+  font-size: 1.2rem;
+  margin-bottom: 28px;
+}
+
+.card {
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  background: #fff;
+  transition: box-shadow 0.2s;
+}
+.card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+.card-img-top {
+  border-radius: 16px 16px 0 0;
+  object-fit: cover;
+  height: 200px;
+}
+
+.footer {
+  background: #fff;
+  color: #888;
+  text-align: center;
+  padding: 18px 0;
+  border-top: 1px solid #eee;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1000;
+}
+
+.carousel-inner p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+  .hero-section p {
+    font-size: 1rem;
+  }
+}
